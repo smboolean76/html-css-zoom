@@ -16,18 +16,46 @@ body {
 }
 
 /*------------------
+    TYPO
+------------------*/
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+/*------------------
+    BUTTONS
+------------------*/
+button {
+    background: transparent;
+    border: none;
+    font-family: inherit;
+}
+.btn-header {
+    background-color: #4a4a4a;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/*------------------
     HEADER
 ------------------*/
 header {
-    height: 30px;
-    background-color: aqua;
+    height: 40px;
+    padding: 0 5px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header .btn-header {
+    margin-left: 6px;
 }
 
 /*------------------
     MAIN
 ------------------*/
 main {
-    height: calc(100% - 120px);
+    height: calc(100% - 130px);
     background-color: blueviolet;
     width: 90%;
     margin: auto;
