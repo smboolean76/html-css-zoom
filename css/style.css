@@ -67,7 +67,7 @@ main {
 }
 .person-col {
     width: calc(100% / 7);
-    padding: 10px;
+    padding: 5px;
 }
 .person {
     position: relative;
