@@ -7,16 +7,25 @@
     padding: 0;
 }
 
+/*------------------
+    COMMONS
+------------------*/
 body {
     background-color: #000;
     height: 100vh;
 }
 
+/*------------------
+    HEADER
+------------------*/
 header {
     height: 30px;
     background-color: aqua;
 }
 
+/*------------------
+    MAIN
+------------------*/
 main {
     height: calc(100% - 120px);
     background-color: blueviolet;
@@ -24,8 +33,42 @@ main {
     margin: auto;
     overflow-y: auto;
 }
+.people {
+    display: flex;
+    flex-wrap: wrap;
+}
+.person-col {
+    width: calc(100% / 7);
+    padding: 10px;
+}
+.person {
+    position: relative;
+    height: 200px;
+    background-color: lightgray;
+    border: 1px dashed red;    
+}
+.person-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: green;
+}
 
+/*------------------
+    FOOTER
+------------------*/
 footer {
     height: 90px;
     background-color: bisque;
+    display: flex;
+}
+footer > div {
+    height: 100%;
+    border: 3px dashed red;    
+}
+.footer-left, .footer-right {
+    width: 15%;
+}
+.footer-center {
+    width: 70%;
 }
